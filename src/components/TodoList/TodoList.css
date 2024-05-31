@@ -1,0 +1,115 @@
+.todo-container {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #e0dbdb;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  
+  input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 70%;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5rem;
+    overflow-y: auto;
+  }
+  
+  li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 0.4rem;
+    border-radius: 5px;
+  }
+  
+  .date {
+    font-size: 0.8em;
+    color: #888;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s;
+  }
+
+  .add-task {
+    background: linear-gradient(45deg, #32740f, #6d9d3d);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 'background 0.3s ease, transform 0.3s ease';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-task:hover {
+    background: linear-gradient(45deg, #ff8787, #ff6b81);
+    transform: translateY(-1px);
+  }
+
+  .add-task:disabled {
+    background: linear-gradient(45deg, #aca8a8, #5c5c5c);;
+    cursor: not-allowed;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+  .input::placeholder {
+    color: #999;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    opacity: 1; /* Ensures the opacity does not reduce on some browsers */
+}
+
+.delete-task {
+  background: linear-gradient(45deg, #c24646, #cc5924);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 'background 0.3s ease, transform 0.3s ease';
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-task:hover {
+  background: linear-gradient(45deg, #ce1d1d, #db5609);
+  transform: translateY(-1px);
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 10;
+    }
+  }
